@@ -363,3 +363,32 @@ footer {
 a {text-decoration: none;}
 
 .different {list-style: circle;}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 1em;
+    }
+    .feedback {
+        padding: 1em;
+    }
+    .feedback h1 {
+        font-size: 1em;
+    }
+
+    .feedback p {
+        font-family: calibri;
+        font-size: 13px;
+    }
+
+    .feedback .gmail {
+        font-size: 11px;
+    }
+
+    .faq {
+        width: 80vw;
+    }
+
+    nav.open {
+        width: 15em;
+    }
+}
