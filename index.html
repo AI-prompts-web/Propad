@@ -1356,7 +1356,14 @@
 
     <footer>&copy; 2026 All Rights Reserved - Propad</footer>
 
-
+<script>
+    document.addEventListner("contextmenu", function(e) {
+        if(!e.target.closest(".prompt")) {
+            e.preventDefault();
+        }
+    });
+</script>
     <script src="main.js"></script>
 </body>
+
 </html>
