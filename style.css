@@ -369,7 +369,8 @@ a {text-decoration: none;}
         padding: 1em;
     }
     .feedback {
-        padding: 1em;
+        padding: 1.4em;
+        margin: 6em 1em;
     }
     .feedback h1 {
         font-size: 1em;
@@ -381,7 +382,7 @@ a {text-decoration: none;}
     }
 
     .feedback .gmail {
-        font-size: 11px;
+        font-size: 8px;
     }
 
     .faq {
