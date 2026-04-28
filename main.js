@@ -1,6 +1,17 @@
-document.addEventListener('contextmenu', function(e) {
+function handleContextMenu() {
+    if(window.innerWidth >= 800) {
+        document.addEventListener("contextmenu", preventMenu);
+    } else {
+        document.removeEventListener("contextmenu", preventMenu);
+    }
+}
+
+
+function preventMenu(e) {
     e.preventDefault();
-});
+}
+
+window.addEventListener("resize", handleContextMenu);
 
 const close = document.querySelector('.btn-close');
 const hamburger = document.getElementById('hamburger');
