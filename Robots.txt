@@ -1,1 +1,1 @@
-Sitemap: https://yourwebsite.com/sitemap.xml
+Sitemap: https://propadprompts.netlify.app/sitemap.xml
