@@ -393,3 +393,127 @@ a {text-decoration: none;}
         width: 15em;
     }
 }
+
+.bulk-prompts {
+    margin: 2em;
+}
+
+.bulk-prompts .bulk-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.bulk-prompts .bulk-cards .bulk-card {
+    padding: 2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.bulk-prompts .bulk-cards .bulk-card.insta {background: linear-gradient(90deg, #000, #ff008c);}
+
+.bulk-prompts .bulk-cards .bulk-card.gpt {background: linear-gradient(90deg, #000, #00ffa6);}
+
+.bulk-prompts .bulk-cards .bulk-card.busi {background: linear-gradient(90deg, #000, #0a1af6);}
+
+.bulk-prompts .bulk-cards .bulk-card.article {background: linear-gradient(90deg, #000, #00bfff);}
+
+.bulk-prompts .bulk-cards .bulk-card:hover {
+    transform: scale(1.01);
+}
+
+.bulk-prompts .bulk-cards .bulk-card h4 {
+    color: #fff;
+    font-size: 18px;
+    font-family: calibri;
+    margin-bottom: 8px;
+}
+
+.bulk-prompts .bulk-cards .bulk-card p {
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+}
+
+.bulk-prompts .bulk-heading {
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 1.7em;
+    font-family: calibri;
+}
+
+.popup {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+}
+
+.popup.on {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup .content {
+    background-color: #fff;
+    padding: 3em;
+    border-radius: 20px;
+}
+
+.popup .content #close {
+    position: relative;
+    left: 100%;
+    bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup .content .img-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+.popup .content .img-container img {
+    border-radius: 20px;
+    box-shadow: 4px 0 4px #000;
+}
+
+.popup .content h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.popup .content .go {
+    position: relative;
+    top: 10px;
+    left: 42%;
+    background: #007c9b;
+    color: #fff;
+    font-weight: bold;
+    padding: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    transition: background 0.2s ease-in-out;
+}
+
+
+.popup .content .go:hover {background: grey;}
+
+.bulk-prompts .bulk-cards .bulk-card .number {color: #cacaca; margin: 1em 0;}
+
+.bulk-prompts .coming-soon {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    font-size: 1.4em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
