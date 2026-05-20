@@ -1,14 +1,4 @@
-function handleContextMenu() {
-    if(window.innerWidth >= 800) {
-        document.addEventListener("contextmenu", function (e) {
-    e.preventDefault();
-});
-    } else {
-        document.removeEventListener("contextmenu", function (e) {
-    e.preventDefault();
-});
-    }
-}
+document.addEventListener("contextmenu", (e) => {e.preventDefault();})
 
 
 
