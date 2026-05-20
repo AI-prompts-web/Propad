@@ -1,9 +1,5 @@
 document.addEventListener("contextmenu", (e) => {e.preventDefault();})
 
-
-
-window.addEventListener("resize", handleContextMenu);
-
 const close = document.querySelector('.btn-close');
 const hamburger = document.getElementById('hamburger');
 const menu = document.querySelector('nav');
